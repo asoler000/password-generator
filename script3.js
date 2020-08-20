@@ -19,13 +19,13 @@ function generatePassword() {
       // Determine character options for user
       var confirmLength = prompt("How many characters would you like your password to contain?");
       var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
-      var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
-      var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
-      var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");
+      var confirmNumericCharacter = confirm("How about numbers?");    
+      var confirmLowerCase = confirm("Let's make it extra spicy and add some lowercase characters?");
+      var confirmUpperCase = confirm("And the final touch to make this password 'muy calinete'; let's throw in uppercase characters?");
 
       while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
         alert("You must choose at least one parameter");
-        var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
+        var confirmSpecialCharacter = confirm("Let's try this again. Click OK to confirm if you would like to include special characters");
         var confirmNumericCharacter = confirm("Click OK to confirm if you would like to include numeric characters");    
         var confirmLowerCase = confirm("Click OK to confirm if you would like to include lowercase characters");
         var confirmUpperCase = confirm("Click OK to confirm if you would like to include uppercase characters");   
