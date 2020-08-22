@@ -21,7 +21,7 @@ function generatePassword() {
       var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
       var confirmNumericCharacter = confirm("How about numbers?");    
       var confirmLowerCase = confirm("Let's make it extra spicy and add some lowercase characters?");
-      var confirmUpperCase = confirm("And the final touch to make this password 'muy calinete'; let's throw in uppercase characters?");
+      var confirmUpperCase = confirm("And the final touch to make this password muy calinete; let's throw in uppercase characters?");
 
       while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
         alert("You must choose at least one parameter");
@@ -37,7 +37,7 @@ while(confirmLength <= 7 || confirmLength >= 51) {
     var confirmLength = (prompt("How many characters would you like your password to contain?"));
     } 
 
-    // This let's the user know the condirmation on how many charcters the password will be
+    // This let's the user know the conFirmation on how many charcters the password will be
     alert(`Your password will have ${confirmLength} characters`);
 
 
